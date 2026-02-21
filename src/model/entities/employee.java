@@ -1,13 +1,13 @@
 package model.entities;
 
 
-public class employee {
+public class Employee {
     protected  String Name;
     protected Integer ID;
     protected Integer YearsOfService;
     protected Double Salary;
     
-    public employee(String name, Integer iD, Integer yearsOfService, Double salary) {
+    public Employee(String name, Integer iD, Integer yearsOfService, Double salary) {
         Name = name;
         ID = iD;
         YearsOfService = yearsOfService;

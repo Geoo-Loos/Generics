@@ -12,7 +12,7 @@ public interface InterfaceTeacher {
 
     void addSubject(model.enums.Subject subject);
 
-     List< model.enums.Subject> GetSubjectsTeached();
+     List< model.enums.Subject> getSubjectsTaught();
 
 
 

@@ -7,11 +7,11 @@ import model.enums.Salas;
 import model.enums.Subject;
 import model.interfaces.InterfaceTeacher;
 
-public class teacher extends employee implements InterfaceTeacher {
- public List<Subject> subjects = new ArrayList<>();
+public class Teacher extends Employee implements InterfaceTeacher {
+  private List<Subject> subjects = new ArrayList<>();
   private List<Salas> sala=new ArrayList<>();
 
-    public teacher(String name, Integer iD, Integer yearsOfService, Double salary) {
+    public Teacher(String name, Integer iD, Integer yearsOfService, Double salary) {
         super(name, iD, yearsOfService, salary);
       
     }
@@ -40,8 +40,8 @@ public class teacher extends employee implements InterfaceTeacher {
     }
 
     @Override
-    public List< Subject> GetSubjectsTeached() {
-        return subjects;
+    public List< Subject> getSubjectsTaught() {
+        return new ArrayList<>(subjects);
     }
 
     
